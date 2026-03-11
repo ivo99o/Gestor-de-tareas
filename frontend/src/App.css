@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.columna-izquierda {
+  background-color: #414141;
+  width: 30%;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.titulo-app {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: #eee 4px solid;
+  align-self: center;
+}
+
+.titulo-secundario {
+  margin: 0;
+  padding-bottom: 3%;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  border-bottom: black 2px solid;
+  text-align: center;
+}
+
+.divisor {
+  width: 200%;
+  height: 5%;
+  margin-bottom: 2rem;
+}
+
+.formulario {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input,
+.formulario button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.formulario button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-submit {
+  color: #414141;
+}
+
+.columna-derecha {
+  flex: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.filtros {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.filtro-boton {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filtros button.activo {
+  background-color: #7e7d7d;
+}
+
+.filtros button:hover {
+  background-color: #ddd;
+}
+
+.lista-tareas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tarea-item {
+  border-radius: 10px;
+  padding: 1rem;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarea-item button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.tarea-item .eliminar {
+  background-color: #e1253b;
+  color: white;
+  border: 1px solid white;
+}
+
+.eliminar:hover {
+  background-color: #c5112e;
+}
+
+.tarea-item .editar {
+  background-color: #ffbb33;
+  color: black;
+  border: 1px solid black;
+}
+
+.editar:hover {
+  background-color: #ffa500;
+}
+
+.estado-linea {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

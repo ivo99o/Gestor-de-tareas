@@ -1,0 +1,27 @@
+{
+  "name": "tareas-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "concurrently \"node backend/server.js\" \"cd frontend && npm start\" \"node backend/cron/tareaCron.js\"",
+  "dev:backend": "node backend/server.js",
+  "dev:frontend": "cd frontend && npm start",
+  "dev:cron": "node backend/cron/tareaCron.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "moment-timezone": "^0.6.0",
+    "mongoose": "^8.23.0",
+    "node-cron": "^4.1.1",
+    "twilio": "^5.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
