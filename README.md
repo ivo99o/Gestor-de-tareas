@@ -1,4 +1,4 @@
-Podés copiar esto en README.md
+
 
 ## Screenshots
 
